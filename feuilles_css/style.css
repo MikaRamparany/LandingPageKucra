@@ -11,7 +11,7 @@ body {
 .section1 {
     background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
     display: flex;
-    height : 90vh;
+    height : 100%;
 }
 
 .tete{
@@ -30,39 +30,65 @@ body {
 .tete h1{
     margin-top: -18px;
     width: 25%;
-    font-size: 40px;
+    font-size: 50px;
+    position : relative;
+    
 }
-     nav {
+
+ 
+    nav {
         
         position: relative;
         width: 50%;
         text-align: center;
         display: flex;
         padding-top: -30px;
-        justify-content: space-between;
+        justify-content:center;
+     }
+
+    nav :hover{ 
+            color:rgba(0, 0, 0, 0.325);
       }
     nav a{
         color: aliceblue;
+        margin-left: 40px;
+        margin-top: 1%;
+        font-size: 110%;
+        
     }
- .logosreseaux{
+
+    
+.logosreseaux{
     width: 25%;
     display: flex;
-    justify-content: center;   
-    
-   
+    justify-content: center; 
+    color : aliceblue
  }    
+
+
  
-.logosreseaux i{
+.logosreseaux a{
+    margin-top: 6px ;
     margin-right: 7%;
     position: relative;
+    font-size: 110%;  
+    color : aliceblue
+    
 }
 
+.logosreseaux a :hover{ 
+    color:rgba(0, 0, 0, 0.325);
+}
 
-.WeAreWelcome 
+/* DEBUT Weare ET PARAGRAPHE =================================================================*/
+
+.WeAreStartUp
 {
-    padding-left: 5%;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+    height: 50%;
+    width: 100%;
+    margin-left: 2%;
     
 }
 .slogan{
@@ -75,24 +101,76 @@ body {
     
 }
 .slogan h2{
-    
+    text-align:initial;
     font-weight: bolder;
-    font-size: 280%;
+    font-size: 360%;
     line-height:small ;
+    color: #282626;
+    width: 100%;
 }
 
 .slogan p{
     margin-top: 5%;
+    color: #3b3b3b;
+    font-size: 110%;
+    
 }
-.Kitty {
+/* FIN TITRE ET PARAGRAPHE================================================================*/
+/* DEBUT FORMULAIRE EMAIL / BUTTON =================================================================*/
+
+.slogan form{
+    position: relative;
     display: flex;
-    margin-top:-2.5% ;
-    margin-left: 5%;
-    padding-right: 15%;
+    height: 60px;
+    width: 460px;
+    border-radius: 32px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 5px;
+    
+
+}
+.slogan form #input{
+    border-radius: 32px;
+    border: none;
+    height: 60px;
+    width: 240px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+
+.slogan button {
+    font-size: 100%;
+    letter-spacing: 1px;
+    height: 100%;
+    width: 160px;
+    border-radius: 32px;
+    border: none;
+    background-color: #1294b8;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+
+.slogan button:hover{
+    background-color: #1997baac;
+}
+/* FIN FORMULAIRE EMAIL =================================================================*/
+
+.Kitty {
+    
+    margin-top:5%;
+    margin-left: 0%;
+    padding-right: 14%;
     padding-left: 0;
-    width: 50%;
-    height: 50%px;
-    object-fit: cover;
+    width: 95%;
+    height: 50%;
+    
 }
 
 
