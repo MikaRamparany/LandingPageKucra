@@ -6,7 +6,8 @@
     text-decoration: none;
 }
 body {
-    height:100vh;
+    height:110vh;
+    width: 100vw;
 }
 .section1 {
     background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
@@ -109,7 +110,7 @@ body {
     width: 100%;
 }
 
-.slogan p{
+.slogan .phrase{
     margin-top: 5%;
     color: #3b3b3b;
     font-size: 110%;
@@ -124,7 +125,8 @@ body {
     height: 60px;
     width: 460px;
     border-radius: 32px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.727);
+    
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
@@ -140,6 +142,7 @@ body {
     outline: none;
     padding: 0 10px;
     font-size: 15px;
+    
 }
 
 
@@ -153,25 +156,115 @@ body {
     background-color: #1294b8;
     color: white;
     text-transform: uppercase;
-    position: relative;
-    
+    position: relative;   
 }
+
+
 
 .slogan button:hover{
     background-color: #1997baac;
+    cursor: pointer;
 }
+
+input#input {
+    background-color : rgba(255, 255, 255, 0);
+    
+}
+
 /* FIN FORMULAIRE EMAIL =================================================================*/
 
 .Kitty {
     
-    margin-top:5%;
+    margin-top: 5%;
     margin-left: 0%;
     padding-right: 14%;
     padding-left: 0;
     width: 95%;
-    height: 50%;
+    height: 45%;
     
 }
 
 
+/* PARTIE CARDS =================================================================*/
 
+/*head titre*/
+
+.sectioncards {
+    height: 100%;
+    background : white;
+}
+
+.Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8% 25% 10% 25%;
+}
+
+h3 {
+    height: 70px;
+    width: 70%;
+    text-align: center;
+    font-size: 260%;
+    margin-bottom: 10px;;
+}
+
+p {                         /* ce "P" concernera tous les <p> de la page*/ 
+    text-align: center;
+    font-size: 145%;
+    color: #3b3b3b53;
+    margin-left: 35px;
+    margin-right:35px ;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+
+}
+
+/*Partie flex card*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    
+    
+  
+
+}
+#Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: white;
+    }
+#Card:hover {
+    transform : translate(0, -4%) ;
+transition-duration: 0.65s;
+}
+
+#Card h4 {
+    margin-top: 30px;
+    font-size: 24px;
+    }
+    
+    .paragraph {
+    margin-top: 16px;
+    padding: 30px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: lighter;
+    }
+    
+    #Card i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    }
