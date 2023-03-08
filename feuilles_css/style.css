@@ -4,15 +4,22 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif; /* ajout du même font pour toute la page */
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 body {
-    height:110vh;
-    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+   
 }
+
+
 .section1 {
     background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
     display: flex;
-    height : 100%;
+    height : 100vh;
 }
 
 .tete{
@@ -87,7 +94,7 @@ body {
 {
     display: flex;
     justify-content: flex-start;
-    height: 50%;
+    height: 100%;
     width: 100%;
     margin-left: 2%;
     
@@ -190,8 +197,9 @@ input#input {
 /*head titre*/
 
 .sectioncards {
-    height: 100%;
-    background : white;
+    background : rgb(255, 254, 254);
+    margin-bottom: 5%;
+    height : 100vh;
 }
 
 .Head {
@@ -268,3 +276,143 @@ transition-duration: 0.65s;
     font-size: 48px;
     margin-bottom: 20px;
     }
+
+    /* ----------- PARTIE How It Works ----------------*/
+
+
+.section2 {
+    
+    background-color : rgba(238, 237, 237, 0.64);
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: 0;
+    width: 100%;
+    height: 90vh;
+}
+
+#Howitworks{
+    border: none;
+    margin-bottom: none; 
+}
+
+/* ----------- PARTIE WE'RE DYNAMIC ----------------*/
+.section3{
+    background-color :#FFF;
+    margin-bottom: 10%;
+    justify-content:0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Title-phrase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8% 25% 10% 25%;
+}
+
+h5 {
+    height: 200px;
+    width: 80%;
+    text-align: center;
+    font-size: 260%;
+    margin-bottom: 10px;
+}
+p1{
+    text-align: center;
+    font-size: 145%;
+    color: #3b3b3b53;
+    margin-left: 35px;
+    margin-right:35px ;
+    padding-left: 40px;
+    padding-right: 40px; 
+}
+
+/* ----------- Cartes Experts ----------------*/
+
+.expertscards{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    height: 200px;
+    width : 100vw;
+    
+}
+
+.expert{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1294b8;
+    position: relative; /* ajout de position relative pour pouvoir positionner le coeur par rapport à l'image */
+    overflow: hidden;
+
+}
+
+h6 {
+    height: 70px;
+    width: 80%;
+    font-size: 260%;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.CardExpert img{
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    
+}
+.CardExpert img:hover{
+    transform : scale(1.1) ;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    filter : none;
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Socialicons{
+    
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    width: 60px;
+    height: 90px;
+    color:aliceblue;
+    background-color: rgba(219, 31, 62, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-90%); 
+    transition: opacity 0.3s ease-in-out, transform 0.59s ease-out; /* Ajout de la transition pour l'animation */
+    
+}
+
+.PhotoSocial{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.PhotoSocial:hover .Socialicons{
+    transform : scale(1.1) ;
+    transition-duration: 0.3s;
+    overflow: hidden;
+
+}
