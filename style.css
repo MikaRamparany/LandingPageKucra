@@ -1,0 +1,567 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* ajout du même font pour toute la page */
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.section1 {
+    background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
+    display: flex;
+    height : 100vh;
+}
+
+.tete{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+.tete h1{
+    margin-top: -18px;
+    width: 25%;
+    font-size: 50px;
+    position : relative;
+    
+}
+
+ 
+    nav {
+        
+        position: relative;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        padding-top: -30px;
+        justify-content:center;
+     }
+
+    nav :hover{ 
+            color:rgba(0, 0, 0, 0.325);
+      }
+    nav a{
+        color: aliceblue;
+        margin-left: 40px;
+        margin-top: 1%;
+        font-size: 110%;
+        
+    }
+
+    
+.logosreseaux{
+    width: 25%;
+    display: flex;
+    justify-content: center; 
+    color : aliceblue
+ }    
+
+
+ 
+.logosreseaux a{
+    margin-top: 6px ;
+    margin-right: 7%;
+    position: relative;
+    font-size: 110%;  
+    color : aliceblue
+    
+}
+
+.logosreseaux a :hover{ 
+    color:rgba(0, 0, 0, 0.325);
+}
+
+/* DEBUT Weare ET PARAGRAPHE =================================================================*/
+
+.WeAreStartUp
+{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    margin-left: 2%;
+    
+}
+.slogan{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    width: 40%;
+    height: 49%;
+    
+}
+.slogan h2{
+    text-align:initial;
+    font-weight: bolder;
+    font-size: 360%;
+    line-height:small ;
+    color: #282626;
+    width: 100%;
+}
+
+.slogan .phrase{
+    margin-top: 5%;
+    color: #3b3b3b;
+    font-size: 110%;
+    
+}
+/* FIN TITRE ET PARAGRAPHE================================================================*/
+/* DEBUT FORMULAIRE EMAIL / BUTTON =================================================================*/
+
+.slogan form{
+    position: relative;
+    display: flex;
+    height: 60px;
+    width: 460px;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.727);
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 5px;
+    
+
+}
+.slogan form #input{
+    border-radius: 32px;
+    border: none;
+    height: 60px;
+    width: 240px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 15px;
+    
+}
+
+
+.slogan button {
+    font-size: 100%;
+    letter-spacing: 1px;
+    height: 100%;
+    width: 160px;
+    border-radius: 32px;
+    border: none;
+    background-color: #1294b8;
+    color: white;
+    text-transform: uppercase;
+    position: relative;   
+}
+
+
+
+.slogan button:hover{
+    background-color: #1997baac;
+    cursor: pointer;
+}
+
+input#input {
+    background-color : rgba(255, 255, 255, 0);
+    
+}
+
+/* FIN FORMULAIRE EMAIL =================================================================*/
+
+.Kitty {
+    
+    margin-top: 5%;
+    margin-left: 0%;
+    padding-right: 14%;
+    padding-left: 0;
+    width: 95%;
+    height: 45%;
+    
+}
+
+
+/* PARTIE CARDS =================================================================*/
+
+/*head titre*/
+
+.sectioncards {
+    background : rgb(255, 254, 254);
+    margin-bottom: 5%;
+    height : 100vh;
+}
+
+.Head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8% 25% 10% 25%;
+}
+
+h3 {
+    height: 70px;
+    width: 70%;
+    text-align: center;
+    font-size: 260%;
+    margin-bottom: 10px;;
+}
+
+p {                         /* ce "P" concernera tous les <p> de la page*/ 
+    text-align: center;
+    font-size: 145%;
+    color: #3b3b3b53;
+    margin-left: 35px;
+    margin-right:35px ;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+
+}
+
+/*Partie flex card*/
+
+.cards {
+    display: flex;
+    justify-content: center;
+    
+    
+  
+
+}
+#Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: white;
+    }
+#Card:hover {
+    transform : translate(0, -4%) ;
+transition-duration: 0.65s;
+}
+
+#Card h4 {
+    margin-top: 30px;
+    font-size: 24px;
+    }
+    
+    .paragraph {
+    margin-top: 16px;
+    padding: 30px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: lighter;
+    }
+    
+    #Card i {
+    font-size: 48px;
+    margin-bottom: 20px;
+    }
+
+    /* ----------- PARTIE How It Works ----------------*/
+
+
+.section2 {
+    
+    background-color : rgba(238, 237, 237, 0.64);
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#Howitworks{
+    border: none;
+    margin-bottom: none; 
+}
+
+/* ----------- PARTIE WE'RE DYNAMICS ----------------*/
+.section3{
+    padding-top: 0px;;
+    background-color :#FFF;
+    margin-bottom: 10%;
+    margin-top: 0%;
+    justify-content:0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Title-phrase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8% 25% 10% 25%;
+}
+
+h5 {
+    height: 160px;
+    width: 60%;
+    text-align: center;
+    font-size: 260%;
+    margin-bottom: 10px;
+}
+p1{
+    height: 200px;
+    width: 1030px;
+    text-align: center;
+    font-size: 195%;
+    color: #3b3b3b53;
+    margin-left: 35px;
+    margin-right:35px ;
+    padding-left: 40px;
+    padding-right: 40px; 
+   
+}
+
+/* ----------- Cartes Experts ----------------*/
+
+.expertscards{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+    height: 40vh;
+    width : 100vw;
+    
+    
+}
+
+.expert{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1294b800;
+    position: relative; /* ajout de position relative pour pouvoir positionner le coeur par rapport à l'image */
+    overflow: hidden;
+
+}
+
+
+h6 {
+    padding-top: 0px;
+    width: 80%;
+    font-size: 250%;
+    font-weight: light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p2{
+    font-size: 140%;
+    color: #3b3b3b53;
+    height: 90px;
+}
+
+.CardExpert img{
+    height: 280px;
+    width: 280px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.CardExpert img:hover{
+    transform : scale(1.1) ;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    filter : none;
+}
+
+figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Socialicons {
+    
+    position: absolute;
+    top: 410px;
+    left: 0px;
+    width: 60px;
+    height: 90px;
+    color:aliceblue;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(-90%); 
+    transition: opacity 0.3s ease-in-out, transform 0.59s ease-out; /* Ajout de la transition pour l'animation */
+}
+
+.Socialicons i {
+    color : black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff9c ;
+}
+.Socialicons i:hover {
+    transform : translate(5%, -4%) ;
+transition-duration: 0.6s;
+}
+
+.PhotoSocial{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.PhotoSocial:hover .Socialicons{
+    transform : scale(1.1) ;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+figcaption1{
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    height: 40px;
+    margin-bottom:  none;
+}
+
+.Describepost{
+    margin-top: 0%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 135%;
+    height: 100px;
+    color: rgb(130, 129, 129);
+}
+
+/*------------- Section Parallax -------------*/
+
+.section4  {
+    background-image: url(images/parallax.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+
+}
+
+.parallaxcontent{
+    height: 90px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height : 100%;
+    backdrop-filter: brightness(50%) grayscale(20%);
+}
+
+h6 {
+ margin-top: 160px;
+}
+
+p3 {
+    
+    width: 65%;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    
+  }
+
+
+
+button1{
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 40px 10px 40px;
+    transition: all 0.6s;
+    
+}
+
+button1:hover{
+    background-color: #ffffffac;
+    color: #282626;
+    cursor: pointer;
+    transform : translate(0, -6%) ;
+transition-duration: 0.5s;
+}
+
+/*---------------------SECTION 5: WHAT YOUR CLIENT SAYS ----------------------*/
+
+.section5{
+    width: 100%;
+    height: 90vh;
+}
+
+.section5content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section5content h3{
+    margin-top: 10%;
+}
+
+.section5content p{
+    margin: 0% 30% 0% 30%;
+    
+}
+
+.section5content .logobrand {
+    margin-top: 9%;
+    display: flex;
+    justify-content:center;
+    
+    
+}
+.logobrand figure{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.logobrand img{
+    object-fit:contain;
+    height: 120px;
+    width: 120px;
+    border : 400px;
+    border-radius: 50%;
+    /* background-color: red; */
+    filter: grayscale()
+    transition: all 0.3s ease;
+}
+
