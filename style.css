@@ -562,6 +562,5 @@ transition-duration: 0.5s;
     border-radius: 50%;
     /* background-color: red; */
     filter: grayscale()
-    transition: all 0.3s ease;
+    transition all 0.3s ease;
 }
-
