@@ -278,7 +278,7 @@ transition-duration: 0.65s;
 
 .section2 {
     
-    background-color : rgba(238, 237, 237, 0.64);
+    background-color : rgba(238, 237, 237, 0.548);
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
@@ -524,6 +524,8 @@ transition-duration: 0.5s;
 .section5{
     width: 100%;
     height: 90vh;
+    background-color: rgba(199, 199, 199, 0.418)
+    
 }
 
 .section5content{
@@ -544,23 +546,31 @@ transition-duration: 0.5s;
 }
 
 .section5content .logobrand {
-    margin-top: 9%;
+    margin-top: 6%;
     display: flex;
     justify-content:center;
     
     
 }
 .logobrand figure{
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50%;
+    /* background-color: red; */
+    overflow: visible;
 }
 .logobrand img{
     object-fit:contain;
-    height: 120px;
-    width: 120px;
-    border : 400px;
-    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
     /* background-color: red; */
-    filter: grayscale()
-    transition all 0.3s ease;
+    filter: contrast(45%) /*IMPOSSIBLE d'utiliser grayscale sur du noir et blanc, alors on utilise le filtre contrast */
+    
+    /* filter: grayscale(100%) transition all 0.3s ease; */
+}
+.logobrand img:hover{
+    filter : none;
+    transform : scale(1.1) ;
+    transition-duration: 0.3s;
 }
