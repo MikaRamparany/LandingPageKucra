@@ -7,11 +7,8 @@
     scroll-behavior: smooth;
 }
 body {
-    
     display: flex;
     flex-direction: column;
-    margin: 0;
-    
    
 }
 
@@ -133,7 +130,6 @@ body {
     width: 460px;
     border-radius: 32px;
     background-color: rgba(255, 255, 255, 0.727);
-    
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
@@ -289,7 +285,7 @@ transition-duration: 0.65s;
     align-items: center;
     justify-content: 0;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 #Howitworks{
@@ -297,13 +293,14 @@ transition-duration: 0.65s;
     margin-bottom: none; 
 }
 
-/* ----------- PARTIE WE'RE DYNAMIC ----------------*/
+/* ----------- PARTIE WE'RE DYNAMICS ----------------*/
 .section3{
     background-color :#FFF;
     margin-bottom: 10%;
+    margin-top: 0%;
     justify-content:0;
     width: 100%;
-    height: 90vh;
+    height: 00px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,13 +315,15 @@ transition-duration: 0.65s;
 }
 
 h5 {
-    height: 200px;
+    height: 140px;
     width: 80%;
     text-align: center;
     font-size: 260%;
     margin-bottom: 10px;
 }
 p1{
+    height: 200px;
+    width: 900px;
     text-align: center;
     font-size: 145%;
     color: #3b3b3b53;
@@ -341,8 +340,9 @@ p1{
     flex-direction:row;
     justify-content:space-around;
     align-items: center;
-    height: 200px;
+    height: 300px;
     width : 100vw;
+    
     
 }
 
@@ -350,29 +350,37 @@ p1{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1294b8;
+    background-color: #1294b800;
     position: relative; /* ajout de position relative pour pouvoir positionner le coeur par rapport à l'image */
     overflow: hidden;
 
 }
 
+
 h6 {
-    height: 70px;
+    height: 60px;
     width: 80%;
-    font-size: 260%;
+    font-size: 250%;
+    font-weight: light;
     margin-bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+
+p2{
+    font-size: 140%;
+    color: #3b3b3b53;
+    height: 90px;
 }
 
 .CardExpert img{
     height: 280px;
     width: 280px;
-    border-radius: 50%;
     filter: grayscale(100%);
     transition: all 0.3s ease;
+    border-radius: 50%;
+    overflow: hidden;
     
 }
 .CardExpert img:hover{
@@ -388,22 +396,36 @@ figcaption{
     align-items: center;
 }
 
-.Socialicons{
+.Socialicons {
     
     position: absolute;
-    top: 200px;
+    top: 240px;
     left: 0px;
     width: 60px;
     height: 90px;
     color:aliceblue;
-    background-color: rgba(219, 31, 62, 0);
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     transform: translateX(-90%); 
     transition: opacity 0.3s ease-in-out, transform 0.59s ease-out; /* Ajout de la transition pour l'animation */
-    
+}
+
+.Socialicons i {
+    color : black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff9c ;
+}
+.Socialicons i:hover {
+    transform : translate(5%, -4%) ;
+transition-duration: 0.6s;
 }
 
 .PhotoSocial{
@@ -414,5 +436,82 @@ figcaption{
     transform : scale(1.1) ;
     transition-duration: 0.3s;
     overflow: hidden;
+}
 
+figcaption1{
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    height: 40px;
+    margin-bottom:  none;
+}
+
+.Describepost{
+    margin-top: 0%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 135%;
+    height: 100px;
+    color: rgb(130, 129, 129);
+}
+
+/*------------- Section Parallax -------------*/
+
+.Section4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('images/parallax.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.Section4 p {
+    color: white;
+    width: 50%;
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    backdrop-filter: brightness(80%);
+    position: relative;
+    overflow: hidden;
+  }
+
+
+.parallaxcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    backdrop-filter: brightness(50%);
+}
+button1{
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    transition: all 0.6s;
+    
+}
+
+button1:hover{
+    background-color: #ffffffac;
+    color: #282626;
+    cursor: pointer;
+    transform : translate(0, -6%) ;
+transition-duration: 0.5s;
 }
