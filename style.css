@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-   
+    width: 100vw;
 }
 
 
@@ -194,7 +194,7 @@ input#input {
 
 .sectioncards {
     background : rgb(255, 254, 254);
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     height : 100vh;
 }
 
@@ -211,7 +211,7 @@ h3 {
     width: 70%;
     text-align: center;
     font-size: 260%;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
 }
 
 p {                         /* ce "P" concernera tous les <p> de la page*/ 
@@ -297,7 +297,7 @@ transition-duration: 0.65s;
 .section3{
     padding-top: 0px;;
     background-color :#FFF;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     margin-top: 0%;
     justify-content:0;
     width: 100%;
@@ -464,24 +464,24 @@ figcaption1{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
-
+    height: 70vh;
+    
 }
 
 .parallaxcontent{
-    height: 90px;
+    height: 80px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
     width: 100%;
     height : 100%;
     backdrop-filter: brightness(50%) grayscale(20%);
 }
 
 h6 {
- margin-top: 160px;
+ margin-top: 10px;
 }
 
 p3 {
@@ -490,13 +490,15 @@ p3 {
     font-size: 20px;
     margin-left: 10%;
     margin-right: 20%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
     position: relative;
-    color: white;
+    color: rgba(255, 255, 255, 0.631);
     
   }
 
@@ -616,9 +618,10 @@ transition-duration: 0.5s;
 .info{
     display: flex;
     flex-direction: row;
-    
+    margin-top: 10px;
     
 }
+
 #info1{
     width: 25%;
     display: flex;
@@ -626,15 +629,22 @@ transition-duration: 0.5s;
     justify-content: flex-start;
 }
 #info1 h6 {
-    margin-top: 75px;
+    margin-top: 70px;
     display: flex;
     justify-content: flex-start;
     font-weight: lighter;
-    font-size: 38px;
+    font-size: 30px;
+}
+#info1 p4 {
+    font-size:20px ;
+}
+#info2 p4 {
+    font-size:20px ;
 }
 
 #info2{
     width: 50%;
+    margin-left: 10px;
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
@@ -644,11 +654,11 @@ transition-duration: 0.5s;
     display: flex;
     justify-content: flex-start;
     font-weight: lighter;
-    font-size: 38px;
+    font-size: 30px;
 }
 
 button2{
-    width: 26%;
+    width: 27%;
     font-size: 20px;
     
     color: aliceblue;
