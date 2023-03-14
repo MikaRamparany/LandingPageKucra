@@ -249,6 +249,10 @@ p {                         /* ce "P" concernera tous les <p> de la page*/
     border-radius: 15px;
     box-shadow: 0 0 10px rgb(255, 255, 255);
     color: white;
+
+    box-shadow: -1px 13px 20px 3px #6565653e;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
     }
 #Card:hover {
     transform : translate(0, -4%) ;
@@ -382,6 +386,7 @@ p2{
     transition: all 0.3s ease;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
     
 }
 .CardExpert img:hover{
@@ -400,7 +405,7 @@ figcaption{
 .Socialicons {
     
     position: absolute;
-    top: 410px;
+    top: 250px;
     left: 0px;
     width: 60px;
     height: 90px;
@@ -660,7 +665,6 @@ transition-duration: 0.5s;
 button2{
     width: 27%;
     font-size: 20px;
-    
     color: aliceblue;
     border: 1px solid rgb(153, 175, 250);
     background-color:rgb(64, 129, 249) ;
@@ -702,7 +706,7 @@ transition-duration: 0.5s;
     background-color: rgba(199, 199, 199, 0.418);
     display: flex;
     flex-direction:column;
-    align-items: center;
+    
 }
 
 .toppart{ /* partie avec le titre est le paragraphe*/
@@ -718,52 +722,115 @@ transition-duration: 0.5s;
 }
 
 .toppart p{
-    margin: 0% 13% 5% 13%;
+    margin: 0% 23% 5% 23%;
     font-size: 25px;
 }
 
 .threecards{ /*contient les 3 bodycards */
     display: flex;
     flex-direction:row;  
-    justify-content: space-between;
+    justify-content: center;
+    height: 100%;
 }
 
 .bodycards{
-    background-color: #FFF;
+   
     display: flex;
     flex-direction:column;
     height: 500px;
-    width: 445px;
+    width: 438px;
     margin-top: 2%;
     margin-right: 1%;
     margin-left: 1%;
-    border-radius: 3%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -1px 13px 20px 3px #6565653e;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
 }
 
 .headcards{
     height: 35%;
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 0%;
     align-items: center;
+    background-color: #FFF;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     
 }
 .headcards h7{
     font-weight:bolder;
     font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+   
 }
-.options{
-    height: 55%;
-    background-color: rgb(227, 255, 12);
+.options{    /*-- contenant les infos d'option des cards --*/
+    background-color:#FFF;
+    height: 60%;
+    position: relative;
+    font-size: 15px;
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.listoptions p{
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
-.Buttonswhite{
-    height: 20%;
+.values p{
+    width: 20%;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 140px;
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
     
 }
-.Buttonsblue{
-    
+/*-- fin du contenant des options --*/
+
+.Buttonswhite{
+    position: relative;
     height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: #FFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.Buttonsblue{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: #FFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.bodycards button3{
+    position: absolute;
+    font-size: 20px;
+    border: 2px solid rgb(64, 129, 249);
+    color: rgb(64, 129, 249) ;
+    border-radius: 8px;
+    margin-left: 49px;
+    padding: 10px 30% 10px 30%;
+    transition: all 0.6s;
+    
 }
 
 .fa-circle-check{
@@ -772,41 +839,72 @@ transition-duration: 0.5s;
 .fa-circle-xmark{
     color: red;
 }
-
+.headcards #prices{
+    display: flex;
+    flex-direction: row;
+    
+}
 .headcards span {
     color: rgb(64, 129, 249);
-    font-size: 80px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.headcards span1{
+    color: rgb(64, 129, 249);
+    font-size: 80px; 
 }
 
 .headcards span2{
     font-weight: bold;
     font-size:20px ;
+    margin-top: 55px;
 }
 
 
 .bodycardsUp{           /*----------------Carte avec la promotion----------------*/
-    background-color: #FFF;
     display: flex;
     flex-direction:column;
     height: 500px;
-    width: 445px;
+    width: 438px;
     margin-right: 1%;
     margin-left: 1%;
-    border-radius: 3%;
-    position: relative;
+    position: relative; 
     overflow: hidden;
+    box-shadow: -1px 13px 20px 3px #6565653e;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    
+}
+
+.bodycardsUp button3{ 
+    position: absolute;
+    font-size: 20px;
+    background-color:rgb(64, 129, 249) ;
+    border: 2px solid #FFF;
+    color: #FFF;
+    border-radius: 8px;
+    margin-left: 49px;
+    padding: 10px 30% 10px 30%;
+    transition: all 0.6s;
+    
+}
+
+button3:hover{
+    cursor: pointer;
 }
  .promo{
-    position: absolute; /* absolute ici car relative sur le bodycardsup. ceux-ci permettent de faire en sorte que le sale soit sur le body*/
+    position: absolute; /* position absolute ici car relative sur le bodycardsup. ceux-ci permettent de faire en sorte que le sale soit sur le body*/
     top: -1px;  /* valeur -1 pour que le top s'aligne avec le top du bodycardsup */
-    left: 338px;
+    left: 368px;
     display: flex;
     justify-content: center;
     align-items:flex-end;
     background-color: rgb(64, 129, 249);
     color: white;
     text-align: center;
-    width: 80px;
+    width: 70px;
     height: 70px;
     padding-bottom: 25px;
     padding-right: 65px;
