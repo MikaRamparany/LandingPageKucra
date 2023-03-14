@@ -1073,3 +1073,75 @@ button3:hover{
     margin-top: 0;
   }
   
+  /* -------------------------------- PARTIE FOOTER --------------------------------*/ 
+
+  footer{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: #303030;
+    color:gray;
+    font-size: 22px;
+}
+
+#footericons{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.fa-twitter>a>#footericons{
+    font-size: 22px;
+}
+
+.footericon{
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 100%; 
+    padding: 20px;
+    width: 65px; 
+    text-align: center;
+    transition: all .5s;
+}
+
+#footericons>a:hover{
+    color: gray;
+    filter: brightness(60%);
+}
+
+#footerinfo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#footerinfo>a{
+    color: gray;
+    transition: all .5s;
+}
+
+#footerinfo>a:hover{
+    color: lightgrey;
+}
+
+footer p{
+    color: #8a8a8ad4;
+}
+
+.fa-arrow-up{
+    font-size: 30px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 50px;
+    right: 30px;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    width: 53px;
+    border-radius: 100%;
+    cursor: pointer; /* Add a mouse pointer on hover */
+}
