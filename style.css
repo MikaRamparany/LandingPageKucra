@@ -784,7 +784,7 @@ transition-duration: 0.5s;
     margin-left: 0px;
     display: flex;
     flex-direction: row;
-    
+    color: #282626;
 }
 
 .values p{
@@ -795,7 +795,7 @@ transition-duration: 0.5s;
     display: flex;
     flex-direction:row;
     justify-content: end;
-    
+    color: #282626;
 }
 /*-- fin du contenant des options --*/
 
