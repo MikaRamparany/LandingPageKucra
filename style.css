@@ -25,6 +25,7 @@ body {
 .navbar{
     position: absolute;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     color: aliceblue;
     padding: 50px;
