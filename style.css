@@ -9,29 +9,29 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100vh;
+    
 }
 
 
 .section1 {
     background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
     display: flex;
+    flex-direction: column;
     height : 100vh;
+    width: 100vw;
 }
 
 .tete{
-    
+   
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: aliceblue;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2%;
 }
-    .section1 {
-        display: flex;
-        flex-direction: column;
-    }
+
     
 .tete h1{
     margin-top: -18px;
@@ -48,10 +48,8 @@ body {
     nav {
         
         position: relative;
-        width: 50%;
         text-align: center;
         display: flex;
-        padding-top: -30px;
         justify-content:center;
      }
 
@@ -62,7 +60,7 @@ body {
         color: aliceblue;
         margin-left: 40px;
         margin-top: 1%;
-        font-size: 110%;
+        font-size: 100%;
         
     }
 
@@ -73,7 +71,7 @@ body {
     display: flex;
     justify-content:center; 
     color : aliceblue;
-    margin-left:70px;
+    margin-left:0px;
 
  }    
 
@@ -101,7 +99,7 @@ body {
     justify-content: flex-start;
     height: 100vh;
     width: 100vw;
-    margin-left: 2%;
+   
     
 }
 .slogan{
@@ -110,7 +108,7 @@ body {
     flex-direction: column;
     margin-top: 10%;
     margin-left: 8%;
-    width: 30%;
+    width: 30vw;
     height: 49%;
     
 }
@@ -186,7 +184,7 @@ input#input {
 /* FIN FORMULAIRE EMAIL =================================================================*/
 
 .Kitty {
-    width: 70%;
+    width: 70vw;
     margin-top: 0%;
     margin-left: 0%;
     padding-right: 0%;
@@ -197,10 +195,11 @@ input#input {
     
 }
 .Kitty img{
+    
     margin-left: 100px;
-    margin-top: 0;
-    width: 650px;
-    height: 670px;
+    margin-top: 100px;
+    width: 80%;
+    height: 65%;
     
 }
 
@@ -212,6 +211,7 @@ input#input {
     background : rgb(255, 254, 254);
     margin-bottom: 10%;
     height : 100vh;
+    width: 100vw;
 }
 
 .Head {
@@ -304,7 +304,7 @@ transition-duration: 0.65s;
     flex-direction: column;
     align-items: center;
     justify-content: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -324,7 +324,8 @@ transition-duration: 0.65s;
     margin-bottom: 15%;
     margin-top: 0%;
     justify-content:0;
-    width: 100%;
+    width: 100vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -347,7 +348,7 @@ h5 {
 }
 p1{
     height: 200px;
-    width: 1030px;
+    width: 50%;
     text-align: center;
     font-size: 30px;
     color: #3b3b3b53;
@@ -360,15 +361,22 @@ p1{
 
 /* ----------- Cartes Experts ----------------*/
 
+
+.title-phrase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
 .expertscards{
+    padding-top: 5%;
     display: flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
     height: 40vh;
     width : 100vw;
-    
-    
 }
 
 .expert{
@@ -400,8 +408,8 @@ p2{
 }
 
 .CardExpert img{
-    height: 280px;
-    width: 280px;
+    height: 250px;
+    width: 250px;
     filter: grayscale(100%);
     transition: all 0.3s ease;
     border-radius: 50%;
@@ -425,7 +433,7 @@ figcaption{
 .Socialicons {
     
     position: absolute;
-    top: 250px;
+    top: 220px;
     left: 0px;
     width: 60px;
     height: 90px;
@@ -489,7 +497,8 @@ figcaption1{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
+    width: 100vw;
     
 }
 
@@ -549,7 +558,7 @@ transition-duration: 0.5s;
 /*---------------------SECTION 5: WHAT YOUR CLIENT SAYS ----------------------*/
 
 .section5{
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     background-color: rgba(199, 199, 199, 0.418);
     
@@ -574,14 +583,15 @@ transition-duration: 0.5s;
 
 .section5content .logobrand {
     margin-top: 6%;
+    width : 65%;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     
     
 }
 .logobrand figure{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
     border-radius: 50%;
     /* background-color: red; */
     overflow: visible;
@@ -606,19 +616,21 @@ transition-duration: 0.5s;
 .section6{
     
     height: 90vh;
+    width: 100vw;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction:row;
     align-items: center;
-    margin-left: 9%;
-    margin-right: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
     
 }
 .leftpart{ 
     width: 50%;                         /* left part*/
     display: flex;
     flex-direction: column;
-    margin-right: 5%;
+    margin-right: 0%;
+    margin-left: 12%;
     
 }
 .leftpart h3{
@@ -633,6 +645,7 @@ transition-duration: 0.5s;
     width: 85%;
     line-height:1.3;
     margin-top: 20px;
+    padding-right: 15%;
 }
 .leftpart p4{
     font-size: 140%;
@@ -669,7 +682,6 @@ transition-duration: 0.5s;
 
 #info2{
     width: 50%;
-    margin-left: 40px;
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
@@ -683,8 +695,8 @@ transition-duration: 0.5s;
 }
 
 button2{
-    width: 180px;
-    font-size: 20px;
+    width: 220px;
+    font-size: 25px;
     color: aliceblue;
     border: 1px solid rgb(153, 175, 250);
     background-color:rgb(64, 129, 249) ;
@@ -713,8 +725,8 @@ transition-duration: 0.5s;
 }
 
 .creativity img{
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
 }
 
 /*--------------------------------OUR PRICING--------------------------------*/
@@ -969,14 +981,14 @@ button3:hover{
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 400px;
+    width: 25%;
     margin-left: 40px;
     margin-right: 40px;
 }
 .blogcardheader img{    
     display: flex;
     flex-direction: column;
-    width: 430px;
+    width: 30%;
     border-radius: 12px;
 }
 
@@ -1077,6 +1089,7 @@ button3:hover{
 
   footer{
     height: 35vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1143,5 +1156,5 @@ footer p{
     padding: 10px;
     width: 53px;
     border-radius: 100%;
-    cursor: pointer; /* Add a mouse pointer on hover */
+    cursor: pointer; 
 }
