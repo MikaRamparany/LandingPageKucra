@@ -1,18 +1,8 @@
-@media(max-width: 768px) and (max-width: 1300x)
+@media screen and (max-width: 1300px)
+
 {
-
-
-
-   .tete{
- height: 35%;
-    display: flex;
-    
-   }
-   nav{
-    display: flex;
-    flex-wrap: wrap;
-   }
+    .tete{
+        position: absolute;
+    }
 
 }
-
-/* test  */
