@@ -1,0 +1,16 @@
+@media(max-width: 768px) and (max-width: 1300x)
+{
+
+
+
+   .tete{
+ height: 35%;
+    display: flex;
+    
+   }
+   nav{
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+}
