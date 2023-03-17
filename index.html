@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tablette.css">
+    <link rel="stylesheet" href="slaptop.css">
+    <link rel="stylesheet" href="tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100@600&display=swap" rel="stylesheet">
@@ -16,26 +17,29 @@
 <body>
     <section class="section1"> 
         <header>
+            <img src ="images/menubutton.png" alt="Menu hamburger" class="menu-hamburger">
             <a href ="#" class="kucra">Kucra</a>
-            <div class ="nav-links">
-                <ul>
-                <li href="#">HOME</li>
-                <li href="#">FEATURES</li>
-                <li href="#">CLIENT</li>
-                <li href="#">PRICING</li>
-                <li href="#">FAQ</li>
-                <li href="#">ABOUT</li>
-                <li href="#">BLOG</li>
-                <li href="#">CONTACT</li>
-                </ul>
-        </div>
-            <div class="logosreseaux">
-            
-            <a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            
-            </div> 
+                
+                    <div class ="nav-links">
+                        <ul>
+                        <li href="#">HOME</li>
+                        <li href="#">FEATURES</li>
+                        <li href="#">CLIENT</li>
+                        <li href="#">PRICING</li>
+                        <li href="#">FAQ</li>
+                        <li href="#">ABOUT</li>
+                        <li href="#">BLOG</li>
+                        <li href="#">CONTACT</li>
+                        </ul>
+                    
+                    </div>
+
+                    <div class="logosreseaux">
+                    <a href="https://fr-fr.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div> 
+                
                 
             
        
@@ -47,7 +51,7 @@
                 <div class ="phrase">Carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation</div>
                 <form action="#">
                     <input type="text" placeholder="Enter your email" id="input">
-                    <button>SUBSCRIBE </button>
+                    <button><p>SUBSCRIBE</p></button>
                 </form>
             </div>
              <div class="Kitty">
@@ -71,19 +75,19 @@
             <!--Card1-->
             <div id="Card" class="globe">
                 <i id="logo" class="fa-solid fa-globe"></i>
-            <h4>Digital Design</h4>
+            <h1>Digital Design</h1>
             <div class=" paragraph">Some quick examples text to build on the card title and make up the bulk of the card and the platform.</div>
             </div>
             <!--Card2-->
             <div id="Card" class="paint">
                 <i id="logo"class="fa-solid fa-brush"></i>
-            <h4>Unlimited Colors</h4>
+            <h1>Unlimited Colors</h1>
             <div class=" paragraph">Credibly brand standards compliant user extendible services College Anibh Ocean euismod tincidunt Laoret.</div>
             </div>
             <!--Card3-->
             <div id="Card" class="chess">
                 <i id="logo"class="fa-solid fa-chess"></i>
-            <h4>Strategy Solutions</h4>
+            <h1>Strategy Solutions</h1>
             <div class=" paragraph">Separated they live in Bookmarks grove right at the coast of the Semantics, a large ocean regelialia.</div>
             </div>
         </div>
@@ -430,8 +434,16 @@
     </footer>
 
 
-    
-    <script src="https://kit.fontawesome.com/9e57a7277f.js" crossorigin="anonymous"></script> 
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+    <script src="https://kit.fontawesome.com/9e57a7277f.js" crossorigin="anonymous">
+    </script> 
     <!--avec le scripte, plus besoin de faire le lien dans le head -->
 </body>
 </html>
