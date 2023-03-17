@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    width: 100vw;
     
 }
 
@@ -19,39 +19,39 @@ body {
     display: flex;
     flex-direction: column;
     height : 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
-.navbar{
-    position: absolute;
+header{
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-between;
     color: aliceblue;
-    padding: 50px;
+    /* padding: 50px; */
     width: 100%;
     height: 20vh;
 }
 
-.navbar ul{
+header ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:center;
     text-decoration: none;
     text-align: center;
-    width: 60%;
+    width: 80%;
     list-style-type: none;
 }
-.navbar .kucra{
-    margin-top: -18px;
+header .kucra{
     width: 25%;
     font-size: 50px;
-    position : relative;
+    
     display: flex;
     flex-direction: row;
     justify-content:center;
     color: aliceblue;
     font-weight:700;
+    
     
 }
 
@@ -61,7 +61,8 @@ body {
         text-align: center;
         display: flex;
         flex-direction: row;
-        justify-content:space-evenly;
+        flex-direction: center;
+        
 
      }
 
@@ -72,10 +73,10 @@ body {
         display: flex;
        justify-content: center;
         color: aliceblue;
-        margin-left: 27px;
-        margin-right: 27px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
         margin-top: 1%;
-        font-size:20px;
+        font-size:15px;
         font-weight:500;
         
     }
@@ -83,19 +84,18 @@ body {
     
 .logosreseaux{
     
-    width: 25%;
-    display: flex;
-    justify-content:center; 
+    margin-right:10%;
+    display: flex; 
     color : aliceblue;
-    margin-left:0px;
+    
 
  }    
 
 
  
 .logosreseaux a{
-    margin-top: 6px ;
-    margin-right: 7%;
+    margin:10px;
+    /* margin-right: 7%; */
     position: relative;
     font-size: 110%;  
     color : aliceblue
@@ -106,14 +106,15 @@ body {
     color:rgba(0, 0, 0, 0.325);
 }
 
-/* DEBUT Weare ET PARAGRAPHE =================================================================*/
+/* DEBUT We are ET PARAGRAPHE =================================================================*/
 
 .WeAreStartUp
 {   
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    height: 80vh;
+    align-items: center;
+    justify-content:space-between ;
+    height: 100vh;
     width: 100vw;
    
     
@@ -122,27 +123,29 @@ body {
     
     display: flex;
     flex-direction: column;
-    margin-top: 12%;
-    margin-left: 12%;
-    width: 30vw;
-    height: 49%;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: 45%;
+    height: 100%;
     
 }
 .slogan h2{
     text-align:initial;
     font-weight: bolder;
-    font-size: 460%;
+    font-size: 45px;
     line-height:small ;
     color: #282626;
-    width: 100%;
+    width: 65%;
     font-weight:700;
+    margin-bottom: 5%;
 }
 
 .slogan .phrase{
-    margin-top: 5%;
     color: #3b3b3b;
-    font-size: 25px;
-    width: 100%;
+    font-size: 18px;
+    width: 65%;
+    margin-bottom: 5%;
     
 }
 /* FIN TITRE ET PARAGRAPHE================================================================*/
@@ -151,13 +154,12 @@ body {
 .slogan form{
     position: relative;
     display: flex;
-    height: 60px;
-    width: 540px;
+    height: 9%;
+    width: 65%;
     border-radius: 32px;
     background-color: rgba(255, 255, 255, 0.727);
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
     padding: 5px;
     
 
@@ -166,7 +168,7 @@ body {
     border-radius: 32px;
     border: none;
     height: 60px;
-    width: 240px;
+    width: 50%;
     outline: none;
     padding: 0 10px;
     font-size: 15px;
@@ -175,10 +177,10 @@ body {
 
 
 .slogan button {
-    font-size: 100%;
+    font-size: 90%;
     letter-spacing: 1px;
     height: 100%;
-    width: 160px;
+    width: 30%;
     border-radius: 32px;
     border: none;
     background-color: #1294b8;
@@ -202,22 +204,19 @@ input#input {
 /* FIN FORMULAIRE EMAIL =================================================================*/
 
 .Kitty {
-    width: 70vw;
-    margin-top: 0%;
-    margin-left: 0%;
-    padding-right: 0%;
-    padding-left: 0;   
+    width: 60%;
+    height: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items:center;
     justify-content: start;
     
 }
 .Kitty img{
-    
-    padding-left: 2%;
-    margin-top: 11%;
-    width: 90%;
-    height: 75%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 86%;
+ 
     
 }
 
@@ -227,58 +226,58 @@ input#input {
 
 .sectioncards {
     background : rgb(255, 254, 254);
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
     height : 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .Head {
+    height: 35% ;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    margin: 8% 25% 10% 25%;
+    
 }
 
 h3 {
-    height: 70px;
+    height: 50%;
     width: 70%;
     text-align: center;
-    font-size: 260%;
-    margin-bottom: 10px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+   
 }
 
-p {                         /* ce "P" concernera tous les <p> de la page*/ 
+p {                
+    height: 40%; 
+    width: 60%;        /* ce "P" concernera tous les <p> de la page*/ 
     text-align: center;
-    font-size: 145%;
+    font-size: 13px;
     color: #3b3b3b53;
-    margin-left: 35px;
-    margin-right:35px ;
-    padding-left: 40px;
-    padding-right: 40px;
-    
-
 }
 
 /*Partie flex card*/
 
 .cards {
+    height: 70%;
     display: flex;
     justify-content: center;
-    
-    
-  
-
+    flex-direction: row;
 }
 #Card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 450px;
-    width: 450px;
-    margin-left: 20px;
-    margin-right: 20px;
+    height: 70%;
+    width: 80%;
+    margin-left: 2%;
+    margin-right: 2%;
     background: radial-gradient( circle, rgb(139, 195,245), #1294b8);
     border-radius: 15px;
     box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -316,8 +315,7 @@ transition-duration: 0.65s;
 
 .section2 {
     
-    background-color : rgba(238, 237, 237, 0.548);
-    margin-bottom: 10%;
+    background-color : rgba(230, 230, 230, 0.774);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -339,66 +337,54 @@ transition-duration: 0.65s;
 .section3{
     padding-top: 0px;;
     background-color :#FFF;
-    margin-bottom: 15%;
     margin-top: 0%;
     justify-content:0;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Title-phrase{
+.title-phrase{
+    height: 40%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 8% 25% 10% 25%;
 }
 
-h5 {
-    height: 160px;
-    width: 60%;
+.title-phrase h3 {
+    height: 40%;
+    width: 100%;
     text-align: center;
-    font-size: 260%;
+    font-size: 35px;
     margin-bottom: 10px;
 }
-p1{
-    height: 200px;
-    width: 50%;
+.title-phrase p{
+    height: 30%;
+    width: 80%;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     color: #3b3b3b53;
-    margin-left: 35px;
-    margin-right:35px ;
-    padding-left: 40px;
-    padding-right: 40px; 
    
 }
 
 /* ----------- Cartes Experts ----------------*/
 
-
-.title-phrase{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-}
 .expertscards{
-    padding-top: 5%;
+    height: 60%;
+    width : 100%;
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
     align-items: center;
-    height: 35vh;
-    width : 100vw;
+    
 }
 
 .expert{
-    
+    height:100% ;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -410,24 +396,27 @@ p1{
 
 
 h6 {
-    padding-top: 0px;
+
     width: 80%;
-    font-size: 250%;
+    font-size: 30px;
     font-weight:400;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-p2{
-    font-size: 140%;
+.expert p{
+
+     height: 15%;
+    width: 80%;
+    text-align: center;
+    font-size: 17px;
     color: #3b3b3b53;
-    height: 90px;
 }
 
 .CardExpert img{
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180;
     filter: grayscale(100%);
     transition: all 0.3s ease;
     border-radius: 50%;
@@ -446,6 +435,8 @@ figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+    color: rgb(130, 129, 129);
 }
 
 .Socialicons {
@@ -493,20 +484,12 @@ transition-duration: 0.6s;
 figcaption1{
     display: flex;
     justify-content: center;
-    font-size: 150%;
-    height: 40px;
+    font-size: 20px;
+    
     margin-bottom:  none;
 }
 
-.Describepost{
-    margin-top: 0%;
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
-    font-size: 135%;
-    height: 100px;
-    color: rgb(130, 129, 129);
-}
+
 
 /*------------- Section Parallax -------------*/
 
@@ -533,23 +516,20 @@ figcaption1{
 }
 
 h6 {
- margin-top: 10px;
+ height: 15%;
+ display: flex;
+ align-items: end;
 }
 
 p3 {
-    
+    height: 20%;
     width: 65%;
     font-size: 20px;
-    margin-left: 10%;
-    margin-right: 20%;
-    margin-top: 4%;
-    margin-bottom: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    position: relative;
     color: rgba(255, 255, 255, 0.631);
     
   }
@@ -577,12 +557,13 @@ transition-duration: 0.5s;
 
 .section5{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-color: rgba(199, 199, 199, 0.418);
     
 }
 
 .section5content{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -591,33 +572,34 @@ transition-duration: 0.5s;
 
 
 .section5content h3{
-    margin-top: 10%;
+height: 0%;
+font-weight:600;
 }
 
 .section5content p{
-    margin: 0% 28% 0% 28%;
-    padding: 0;
+    height: 20%;
+    width: 45%;
+    font-size: 20px;
+    display: flex;
 }
 
 .section5content .logobrand {
-    margin-top: 6%;
-    width : 65%;
+
+    width : 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     
     
 }
 .logobrand figure{
-    margin-left: 0%;
-    margin-right: 0%;
     border-radius: 50%;
     /* background-color: red; */
     overflow: visible;
 }
 .logobrand img{
     object-fit:contain;
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     object-fit: contain;
     /* background-color: red; */
     filter: contrast(45%) /*IMPOSSIBLE d'utiliser grayscale sur du noir et blanc, alors on utilise le filtre contrast */
@@ -639,59 +621,70 @@ transition-duration: 0.5s;
     display: flex;
     flex-direction:row;
     align-items: center;
-    margin-left: 0%;
-    margin-right: 0%;
     
 }
 .leftpart{ 
+    height: 100%;
     width: 50%;                         /* left part*/
     display: flex;
     flex-direction: column;
-    margin-right: 0%;
-    margin-left: 12%;
+    justify-content: center;
+    align-items: center;
     
 }
 .leftpart h3{
-    width: 100%;
+    height: 10%;
+    width: 80%;
     display: flex;
-    font-size: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    font-size: 25px;
     font-size: bolder
 }
 .leftpart p2{
+    height: 30%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: start;
     font-size: 130%;
     color: #7c7878;
-    width: 85%;
+    
     line-height:1.3;
-    margin-top: 20px;
-    padding-right: 15%;
+ 
 }
 .leftpart p4{
     font-size: 140%;
     color: #7c7878;
     height: 90px;
-    margin-top: 4px;
 }
 .info{
+    height: 10%;
+    width: 80%;
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    justify-content: start;
     
 }
 
 #info1{
-    width: 25%;
+    height: 100%;
+    width: 40%;
     display: flex;
     flex-direction:column;
-    justify-content: flex-start;
+    justify-content:start;
 }
 #info1 h6 {
-    margin-top: 70px;
+    height: 60%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     font-weight: lighter;
     font-size: 30px;
 }
 #info1 p4 {
+    display: flex;
+    justify-content: start;
     font-size:20px ;
 }
 #info2 p4 {
@@ -699,29 +692,41 @@ transition-duration: 0.5s;
 }
 
 #info2{
-    width: 50%;
+    height: 100%;
+    width: 40%;
     display: flex;
     flex-direction:column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 #info2 h6 {
-    margin-top: 70px;
+    height: 60%;
     display: flex;
     justify-content: flex-start;
     font-weight: lighter;
     font-size: 30px;
 }
 
+#boutton{
+    height: 15%;
+    width: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
 button2{
-    width: 220px;
-    font-size: 25px;
+    height: 60%;
+    width: 42%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: aliceblue;
     border: 1px solid rgb(153, 175, 250);
     background-color:rgb(64, 129, 249) ;
     border-radius: 5px;
     transition: all 0.6s;
-    padding: 10px 30px 10px 30px;
-    text-align: center;
+    
 }
 
 button2:hover{
@@ -733,25 +738,26 @@ transition-duration: 0.5s;
 }
 
 .rightpart{    /*------------------ Right part --------------------*/
-    width: 60%;
+    width: 50%;
 }
 
 .creativity {  /* Nota bene : bien déterminer le margin de creativity qui contient l'img puis paramétrer l'height et width d'img à 100% pour qu'ilpuisse fit avec les marges*/
-
-    margin: 0px 50px 0px 50px;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px px;
     /* background-color: red; */
 }
 
 .creativity img{
-    height: 70%;
-    width: 70%;
+    height: 85%;
+    width: 85%;
 }
 
 /*--------------------------------OUR PRICING--------------------------------*/
 
 .section7{
     
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
     background-color: rgba(199, 199, 199, 0.418);
     display: flex;
@@ -760,6 +766,7 @@ transition-duration: 0.5s;
 }
 
 .toppart{ /* partie avec le titre est le paragraphe*/
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -767,31 +774,29 @@ transition-duration: 0.5s;
 }
 
 .toppart h3{
-    font-size: 38px;
-    margin-top: 5%;
+    font-size: 35px;
 }
 
 .toppart p{
-    margin: 0% 23% 5% 23%;
-    font-size: 26px;
+    height: 20%;
+    font-size: 22px;
 }
 
 .threecards{ /*contient les 3 bodycards */
+    height: 50%;
+    width: 100%;
     display: flex;
     flex-direction:row;  
     justify-content: center;
-    height: 100%;
+   
 }
 
 .bodycards{
-   
+    height: 95%;
+    width: 25%;
+    margin-top: 1.5%;
     display: flex;
     flex-direction:column;
-    height: 500px;
-    width: 438px;
-    margin-top: 2%;
-    margin-right: 1%;
-    margin-left: 1%;
     overflow: hidden;
     position: relative;
     box-shadow: -1px 13px 20px 3px #6565653e;
@@ -800,7 +805,7 @@ transition-duration: 0.5s;
 }
 
 .headcards{
-    height: 35%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     margin-top: 0%;
@@ -811,40 +816,67 @@ transition-duration: 0.5s;
     
 }
 .headcards h7{
+    height: 50%;
+    display: flex;
+    align-items: end;
     font-weight:bolder;
-    font-size: 20px;
-    margin-top: 35px;
-    margin-bottom: 15px;
+    font-size: 18px;
+
    
 }
 .options{    /*-- contenant les infos d'option des cards --*/
     background-color:#FFF;
-    height: 60%;
+    height: 65%;
+    width: 100%;
     position: relative;
     font-size: 15px;
-   
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: end;
 
 }
-.listoptions p{
-    width: 90%;
-    margin-top: 20px;
-    margin-left: 0px;
+
+.logocheck{
+    height: 100%;
+    width: 15%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: right;
+}
+
+.listoptions {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+}
+.listoptions p{
+    
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    text-align: start;
     color: #282626;
 }
 
-.values p{
-    width: 20%;
-    margin-top: 20px;
-    margin-left: 10px;
-    padding-left: 140px;
+.values {
+    width: 50%;
+    height: 100%;
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
     justify-content: end;
+}
+.values p{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    text-align: end;
     color: #282626;
 }
 /*-- fin du contenant des options --*/
@@ -852,8 +884,9 @@ transition-duration: 0.5s;
 .Buttonswhite{
     position: relative;
     height: 20%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     position: relative;
     background-color: #FFF;
@@ -862,8 +895,9 @@ transition-duration: 0.5s;
 }
 .Buttonsblue{
     height: 20%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     position: relative;
     background-color: #FFF;
@@ -872,13 +906,16 @@ transition-duration: 0.5s;
 }
 
 .bodycards button3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
     position: absolute;
     font-size: 20px;
     border: 2px solid rgb(64, 129, 249);
     color: rgb(64, 129, 249) ;
     border-radius: 8px;
-    margin-left: 49px;
-    padding: 10px 30% 10px 30%;
+    padding: 2% 30% 2% 30%;
     transition: all 0.6s;
     
 }
@@ -890,36 +927,56 @@ transition-duration: 0.5s;
     color: red;
 }
 .headcards #prices{
+    height: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     
 }
 .headcards span {
+    height: 100%;
+    width: 5%;
     color: rgb(64, 129, 249);
-    font-size: 30px;
+    font-size: 22px;
     display: flex;
     flex-direction: row;
 }
 
-.headcards span1{
+.headcards span19{ /* créé un span 19 pour le prix à un chiffre car par soucis de détail,pas la même largeur et même flexbox value.*/
+    height: 100%;
+    width: 9%;
     color: rgb(64, 129, 249);
-    font-size: 80px; 
+    font-size: 50px; 
+    display: flex;
+    align-items: start;
+}
+.headcards span1{
+    height: 100%;
+    width: 15%;
+    color: rgb(64, 129, 249);
+    font-size: 50px; 
+    display: flex;
+    align-items: start;
 }
 
-.headcards span2{
+.headcards span2{ /*   le "/month"   */
+    height: 80%;
+    width: 15%;
     font-weight: bold;
-    font-size:20px ;
-    margin-top: 55px;
+    font-size:12px ;
+    display: flex;
+    align-items: end;
 }
 
+/*----------------Carte avec la promotion----------------*/
 
-.bodycardsUp{           /*----------------Carte avec la promotion----------------*/
+.bodycardsUp{  
+    height: 95%;
+    width: 25%;         
     display: flex;
     flex-direction:column;
-    height: 500px;
-    width: 438px;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin :0% 2% 0% 2%;
     position: relative; 
     overflow: hidden;
     box-shadow: -1px 13px 20px 3px #6565653e;
@@ -928,15 +985,57 @@ transition-duration: 0.5s;
     
 }
 
+#titlepromo{
+    height:60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#titlepromo h7{
+    height: 95%;
+    width: 81%;
+    display: flex;
+    padding-left: 19%;
+    justify-content: center;
+    align-items: end;
+}
+#txtpromo{
+    font-size: 19px;
+    width: 100%;
+    height:40px;
+    color: #FFF;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+}
+
+.promo{
+    position: relative; /* position absolute ici car relative sur le bodycardsup. ceux-ci permettent de faire en sorte que le sale soit sur le body*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(64, 129, 249);
+    color: white;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
 .bodycardsUp button3{ 
+    display: flex;
+    justify-content: center;
     position: absolute;
     font-size: 20px;
     background-color:rgb(64, 129, 249) ;
     border: 2px solid #FFF;
     color: #FFF;
     border-radius: 8px;
-    margin-left: 49px;
-    padding: 10px 30% 10px 30%;
+    padding: 2% 30% 2% 30%;
     transition: all 0.6s;
     
 }
@@ -944,34 +1043,7 @@ transition-duration: 0.5s;
 button3:hover{
     cursor: pointer;
 }
- .promo{
-    position: absolute; /* position absolute ici car relative sur le bodycardsup. ceux-ci permettent de faire en sorte que le sale soit sur le body*/
-    top: -1px;  /* valeur -1 pour que le top s'aligne avec le top du bodycardsup */
-    left: 368px;
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    background-color: rgb(64, 129, 249);
-    color: white;
-    text-align: center;
-    width: 70px;
-    height: 70px;
-    padding-bottom: 25px;
-    padding-right: 65px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-#txtpromo{
-        font-size: 19px;
-        width: 70px;
-        height:40px;
-        margin-left: 63px;
-        padding-top: 20px;
-        color: #FFF;
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-}
+
 /*------------------------ SECTION 8 ------------------------------*/
 .section8{
     height: 100vh;
@@ -979,62 +1051,89 @@ button3:hover{
     display : flex;
     flex-direction: column;
 }
-.toppart{
+.Parttop{
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
 }
-.toppart p{
+.Parttop h3{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Parttop p{
+    height: 20%;
+    width: 50%;;
+    font-size: 20px;
     font-weight:300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: end;
 }
 .bottompart{
+    height: 60%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-evenly;
 }
 
 
 .blogcard{
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 25%;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-.blogcardheader img{    
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    border-radius: 12px;
+    height: 100%;
+    width: 28%;
 }
 
+.blogcardheader{
+    height: 80%;
+}
+.blogcardheader img{ 
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.textpart{
+    height:50%;
+    display: flex;
+    flex-direction: column;
+    
+}
 .textpart h4{
+    height: 20%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    font-size: 25px;
+    font-size: 20px;
     font-weight:500;
-    margin-top: 20px;
-    margin-bottom: 15px;
 }
 .textpart p{
-    padding: 0;
+    height: 40%;
     width: 100%;
-    margin-right: 150px;
-    margin-left: 0; /* -- margin left = 0 pour aligner sur la gauche le paragraphe*/
-    margin-bottom: 12px;
     display: flex;
     justify-content: start;
-    font-size: 18.5px;
+    font-size: 17px;
     font-weight: 300;
     text-align: left;
     color: #282626;
 }
 .textpart a{
-    font-size: 110%;  
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 20px;  
     font-weight:500;
     color : rgb(64, 129, 249);
 }
@@ -1045,14 +1144,12 @@ button3:hover{
     position: absolute;
     color: white;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     top: 0;
     left: 0;
-    padding: 10%;
     font-size: 20px;
     width: 100%;
-    height: 97.5%;
+    height: 20%;
     border-radius: 5px;
     opacity: 0;
     transition: all .3s;
@@ -1061,13 +1158,13 @@ button3:hover{
 
 
 .blogicons1{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: #FFF;
 }
 
 .blogicons2{
-    font-size: 17px;
+    font-size: 14px;
     color: #FFF;
 }
   
@@ -1078,17 +1175,18 @@ button3:hover{
     filter: brightness(70%);
   }
   .iconsblog {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    text-align: start;
     position: absolute;
-    top: 140px;
-    left: -50px;
+    top: 20%;
+    left: 0%;
     transform: translateY(-50%);
   }
-  
   .blogicons1,
   .blogicons2 {
     display: inline-block;
-    margin: 0 5px;
   }
   
   .blogcardheader {
@@ -1112,16 +1210,18 @@ button3:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    background-color: #303030;
+    gap: 7%;
+    background-color: #030202de;
     color:gray;
     font-size: 22px;
 }
 
 #footericons{
+    height: 60%;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    align-items: end;
+    gap: 5%;
 }
 
 .fa-twitter>a>#footericons{
@@ -1146,10 +1246,11 @@ button3:hover{
 #footerinfo{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 14px;
 }
 
 #footerinfo>a{
+    
     color: gray;
     transition: all .5s;
 }
@@ -1159,6 +1260,8 @@ button3:hover{
 }
 
 footer p{
+   
+    font-size: 18px;;
     color: #8a8a8ad4;
 }
 
