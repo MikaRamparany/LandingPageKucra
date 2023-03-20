@@ -147,14 +147,14 @@
 }
 
 #talentedTeams{
-    height: 50%;
+    height: 60%;
     width: 80%;
 }
 #talentedTeams p{
    font-size: 20px;
 }
 .expertscards{
-    height: 80%;
+    height: 40%;
 }
 
 @media screen and (max-width: 900px)
@@ -181,9 +181,9 @@
 
     .section5content .logobrand {
         height: 50%;
-            width : 100%;
+            width : 100vw;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             flex-direction: row;
             flex-wrap: wrap;
         }
@@ -191,6 +191,145 @@
         .logobrand {
             height: 50%;
         }
+        .logobrand figure{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section6{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .rightpart{  
+            height: 50%;
+            width: 50%;
+        }
+        .section6 .creativity{   
+            width: 100%;
+        }
+        .section6 .creativity img{ 
+            width: 90%; 
+            margin-right: 0%; 
+            display: flex;
+            justify-content: center;
+        }
+        .section6 .leftpart{
+            height: 50%;
+            width: 80%; 
+            display: flex;
+            font-display: auto;
+            justify-content: center;
+        }
+        .section6 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+        .section6 .leftpart .info, #boutton{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .info{
+            height: 30%;
+        }
+        
+        .leftpart h3{
+            justify-content: center;
+        }
+        .leftpart p2{
+            font-size: 18px;
+        }
+        #info2 p4{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        #info1 p4{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+        }
+        #info2 h6{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #info1 h6{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /*partie OUR PRICING*/
+        
+        .threecards{
+          width:100%;
+        }
+        .threecards .bodycards:first-child {
+            margin-left: 210%;
+
+          }
+        .container{
+          max-width: 310px;
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          border-radius: 15px;
+          overflow-x: scroll;
+          box-shadow: -1px 13px 20px 3px #6565653e;
+        }
+        
+        .bodycards{
+          min-width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+          box-shadow: none;
+        }
+        
+        .bodycardsUp{
+          min-width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+        }
+
+        .section8 .blogcard:first-child {
+            margin-left: 228%;
+
+          }
+
+          .bottompart{ 
+            /* margin-left: 36%; */
+            max-width: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            border-radius: 15px;
+            overflow-x: scroll;
+            box-shadow: -1px 13px 20px 3px #6565653e;
+          }
+          
+          .blogcard{
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            box-shadow: none;
+          }
+
+          
+
+
 }
 
 
