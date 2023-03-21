@@ -181,7 +181,7 @@
 
     .section5content .logobrand {
         height: 50%;
-            width : 100vw;
+            width : 100%;
             display: flex;
             justify-content: space-around;
             flex-direction: row;
@@ -300,18 +300,20 @@
           align-items: center;
           margin-right: 10px;
         }
-
-        .section8 .blogcard:first-child {
-            margin-left: 228%;
+        
+         .section8 .blogcard:first-child {
+            height: auto 100%;
+            margin-top: 165%;
 
           }
 
-          .bottompart{ 
+         /* .bottompart{ 
             /* margin-left: 36%; */
-            max-width: 300px;
+            /* max-width: 300px;
             width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center;
 
             border-radius: 15px;
             overflow-x: scroll;
@@ -327,9 +329,27 @@
             box-shadow: none;
           }
 
-          
-
-
+           */
+           .bottompart{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            border-radius: 15px;
+            overflow-x: scroll;
+           }
+           .blogcard{
+            
+            min-width: 300px;
+            min-height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            box-shadow: none;
+          }
 }
 
 

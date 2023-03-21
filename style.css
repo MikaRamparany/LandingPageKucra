@@ -9,7 +9,7 @@
 body {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+
     
 }
 
@@ -90,6 +90,7 @@ header .kucra{
     
     display: flex; 
     color : aliceblue;
+    padding-right: 20px;
     
 
  }    
@@ -118,7 +119,7 @@ header .kucra{
     align-items: center;
     justify-content:space-between ;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
    
     
 }
@@ -244,7 +245,7 @@ input#input {
     background : rgb(255, 254, 254);
     /* margin-bottom: 10%; */
     height : 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
 }
@@ -336,7 +337,7 @@ transition-duration: 0.65s;
     flex-direction: column;
     align-items: center;
     justify-content: 0;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
 }
 
@@ -355,7 +356,7 @@ transition-duration: 0.65s;
     background-color :#FFF;
     margin-top: 0%;
     justify-content:0;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -516,7 +517,7 @@ figcaption1{
     background-size: cover;
     position: relative;
     height: 80vh;
-    width: 100vw;
+    /* width: 100vw; */
     
 }
 
@@ -575,7 +576,7 @@ transition-duration: 0.5s;
 /*---------------------SECTION 5: WHAT YOUR CLIENT SAYS ----------------------*/
 
 .section5{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     background-color: rgba(199, 199, 199, 0.418);
     
@@ -603,8 +604,8 @@ font-weight:600;
 }
 
 .section5content .logobrand {
-height: 50%;
-    width : 100%;
+    height: 50%;
+    /* width : 100%; */
     display: flex;
     justify-content:space-evenly;
     flex-direction: row;
@@ -634,7 +635,7 @@ height: 50%;
 .section6{
     
     height: 90vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction:row;
@@ -779,7 +780,7 @@ transition-duration: 0.5s;
 .section7{
     
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     background-color: rgba(199, 199, 199, 0.418);
     display: flex;
     flex-direction:column;
@@ -805,17 +806,17 @@ transition-duration: 0.5s;
 
 .threecards{ /*contient les 3 bodycards */
     height: 50%;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction:row;  
     justify-content: center;
 }
 .container{ /*contient les 3 bodycards */
     height: 100%;
-    width: 100%;
+    width: 94%;
     display: flex;
-    justify-content: center;
-    gap: 2%;
+    justify-content: space-evenly;
+    /* gap: 2%; */
 }
 
 .bodycards{
@@ -1007,11 +1008,11 @@ transition-duration: 0.5s;
     display: flex;
     flex-direction:column;
     /* margin :0% 2% 0% 2%; */
-    position: relative; 
-    overflow: hidden;
+    /* position: relative;  */
+    /* overflow: hidden; */
     box-shadow: -1px 13px 20px 3px #6565653e;
-    -moz-border-radius:15px;
-    -webkit-border-radius:15px;
+    /* --moz-border-radius:15px;
+    --webkit-border-radius:15px; */
     
 }
 
@@ -1078,7 +1079,7 @@ button3:hover{
 /*------------------------ SECTION 8 ------------------------------*/
 .section8{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display : flex;
     flex-direction: column;
 }
@@ -1098,7 +1099,7 @@ button3:hover{
 }
 .Parttop p{
     height: 20%;
-    width: 50%;;
+    width: 50%;
     font-size: 20px;
     font-weight:300;
     display: flex;
@@ -1112,8 +1113,8 @@ button3:hover{
     width: 100%;
     display: flex;
     flex-direction:row;  
-    justify-content: center;
-    gap: 18px;
+    justify-content: space-evenly;
+    /* gap: 18px; */
 }
 
 
@@ -1127,7 +1128,7 @@ button3:hover{
 .blogcardheader{
     height: 80%;
     min-height: 260px;
-    min-width: 260px;;
+    min-width: 260px;
 }
 .blogcardheader img{ 
     height: 100%;   
@@ -1241,7 +1242,7 @@ button3:hover{
 
   footer{
     height: 35vh;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     align-items: center;
